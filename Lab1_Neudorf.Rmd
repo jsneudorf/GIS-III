@@ -1,0 +1,50 @@
+---
+title: "Lab1 GIS III"
+author: "Joshua Neudorf"
+date: "April 12, 2020"
+output: pdf_document
+---
+
+This is the version we are using
+
+```{r}
+
+version
+
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+These are my installed and loaded packages: 
+
+```{r}
+
+library("sf")
+library("raster")
+library("spData")
+
+```
+
+This is basic arithmetic:
+
+```{r}
+
+4+1
+
+```
+
+This is pulling from the "world" data from spData and using the "plot"" feature from sf
+```{r}
+
+plot(world)
+
+```
+
+This uses the "summary" function from world. 
+```{r}
+summary(world["lifeExp"])
+
+```
+
+
