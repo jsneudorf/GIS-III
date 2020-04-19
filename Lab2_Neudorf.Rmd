@@ -14,7 +14,7 @@ library(dplyr)
 library(spData)
 ```
 
-This document will analyze the nz dataset with basic information about New Zealand.
+This document will analyze the nz dataset from spData with basic information about New Zealand.
 
 
 First, Summary Statistics on the variables included in the dataset:
