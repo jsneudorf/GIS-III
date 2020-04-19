@@ -1,0 +1,38 @@
+---
+title: "Lab2_Neudorf"
+author: "Joshua Neudorf"
+date: "April 19, 2020"
+output: pdf_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(sf)
+library(raster)
+library(dplyr)
+library(spData)
+```
+
+This document will analyze the nz dataset with basic information about New Zealand.
+
+
+First, Summary Statistics on the variables included in the dataset:
+```{r nz}
+summary(nz)
+```
+
+
+
+
+To go deeper, below is a histogram of median income per region. It is clear that the nationwide median is likely between 26000 and 28000. 
+
+```{r , echo=FALSE}
+hist(nz$Median_income)
+```
+
+
+This conclusion is then mapped, showing the regional disparities in income. 
+```{r plot, Echo = FALSE}
+plot(nz["Median_income"])
+```
