@@ -1,0 +1,53 @@
+This is after the deadline, but I figured out why my shinyapp wasnt publishing. I hit the maximum memory amount usable for free R Shiny accounts. 
+
+2020-06-15T06:16:32.838077+00:00 shinyapps[2455180]: The following object is masked from ‘package:raster’:
+2020-06-15T06:16:32.838078+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.838078+00:00 shinyapps[2455180]:     shift
+2020-06-15T06:16:32.838079+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.838353+00:00 shinyapps[2455180]: The following objects are masked from ‘package:dplyr’:
+2020-06-15T06:16:32.838353+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.838354+00:00 shinyapps[2455180]:     between, first, last
+2020-06-15T06:16:32.942758+00:00 shinyapps[2455180]: Attaching package: ‘lubridate’
+2020-06-15T06:16:32.838354+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.942755+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.943135+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.943135+00:00 shinyapps[2455180]:     hour, isoweek, mday, minute, month, quarter, second, wday, week,
+2020-06-15T06:16:32.943136+00:00 shinyapps[2455180]:     yday, year
+2020-06-15T06:16:32.943136+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.943403+00:00 shinyapps[2455180]: The following objects are masked from ‘package:raster’:
+2020-06-15T06:16:32.943404+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.943404+00:00 shinyapps[2455180]:     intersect, union
+2020-06-15T06:16:32.943405+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.942758+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.943675+00:00 shinyapps[2455180]: The following objects are masked from ‘package:base’:
+2020-06-15T06:16:32.943133+00:00 shinyapps[2455180]: The following objects are masked from ‘package:data.table’:
+2020-06-15T06:16:32.943675+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.943676+00:00 shinyapps[2455180]:     date, intersect, setdiff, union
+2020-06-15T06:16:32.943676+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:32.945892+00:00 shinyapps[2455180]: Loading required package: maptools
+2020-06-15T06:16:32.996264+00:00 shinyapps[2455180]: Checking rgeos availability: TRUE
+2020-06-15T06:16:32.999983+00:00 shinyapps[2455180]: Loading required package: MASS
+2020-06-15T06:16:33.015152+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:33.015154+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:33.015491+00:00 shinyapps[2455180]: The following objects are masked from ‘package:raster’:
+2020-06-15T06:16:33.015153+00:00 shinyapps[2455180]: Attaching package: ‘MASS’
+2020-06-15T06:16:33.015499+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:33.015500+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:33.015499+00:00 shinyapps[2455180]:     area, select
+2020-06-15T06:16:33.015765+00:00 shinyapps[2455180]: The following object is masked from ‘package:dplyr’:
+2020-06-15T06:16:33.015765+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:33.015766+00:00 shinyapps[2455180]:     select
+2020-06-15T06:16:33.015766+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:33.016510+00:00 shinyapps[2455180]: Loading required package: rgeos
+2020-06-15T06:16:33.082733+00:00 shinyapps[2455180]: rgeos version: 0.5-3, (SVN revision 634)
+2020-06-15T06:16:33.082747+00:00 shinyapps[2455180]:  GEOS runtime version: 3.5.1-CAPI-1.9.1 
+2020-06-15T06:16:33.082748+00:00 shinyapps[2455180]:  Linking to sp version: 1.4-2 
+2020-06-15T06:16:33.082748+00:00 shinyapps[2455180]:  Polygon checking: TRUE 
+2020-06-15T06:16:33.082749+00:00 shinyapps[2455180]: 
+2020-06-15T06:16:34.205832+00:00 shinyapps[2455180]: Reading layer `NUTS_RG_01M_2016_4326_LEVL_3' from data source `/srv/connect/apps/THORWWII/NUTS_RG_01M_2016_4326_LEVL_3.shp' using driver `ESRI Shapefile'
+2020-06-15T06:16:34.311232+00:00 shinyapps[2455180]: Simple feature collection with 1522 features and 8 fields
+2020-06-15T06:16:34.311248+00:00 shinyapps[2455180]: dimension:      XY
+2020-06-15T06:16:34.311247+00:00 shinyapps[2455180]: geometry type:  MULTIPOLYGON
+2020-06-15T06:16:34.311309+00:00 shinyapps[2455180]: bbox:           xmin: -63.15119 ymin: -21.38885 xmax: 55.83578 ymax: 71.18416
+2020-06-15T06:16:34.313643+00:00 shinyapps[2455180]: CRS:            4326
+2020-06-15T06:16:39.100076+00:00 shinyapps[system]: Out of memory!
